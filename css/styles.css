@@ -65,7 +65,8 @@ body {
 }
 
 .radio-button {
-  display: none;
+  /* display: none; */
+  /* opacity: 0; */
 }
 
 .toggle-switch {
@@ -113,7 +114,7 @@ body {
   border-radius: 50%;
 }
 
-.toggle-right {
+.toggle-circle {
   -webkit-transform: translateX(23px);
   -ms-transform: translateX(23px);
   transform: translateX(23px);

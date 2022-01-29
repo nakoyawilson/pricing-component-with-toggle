@@ -1,3 +1,4 @@
+const toggleSwitch = document.querySelector(".switch");
 const toggleIndicator = document.querySelector(".circle");
 const radioButtons = document.querySelectorAll('input[name="billing-period"]');
 const basicCost = document.querySelector("#basic-cost");
@@ -8,7 +9,6 @@ const displayCost = () => {
   const billingPeriod = document.querySelector(
     'input[type="radio"]:checked'
   ).value;
-  console.log(billingPeriod);
   if (billingPeriod === "Monthly") {
     basicCost.innerHTML = "19.99";
     professionalCost.innerHTML = "24.99";
@@ -20,11 +20,11 @@ const displayCost = () => {
   }
 };
 
-const toggleSlider = () => {
-  toggleIndicator.classList.toggle("toggle-right");
-};
-
 displayCost();
+
+const toggleSlider = () => {
+  toggleIndicator.classList.toggle("toggle-circle");
+};
 
 radioButtons.forEach((button) => {
   button.addEventListener("change", () => {
@@ -33,7 +33,10 @@ radioButtons.forEach((button) => {
   });
 });
 
-toggleIndicator.addEventListener("click", () => {
+toggleSwitch.addEventListener("click", () => {
+  document.querySelector("#annually").checked
+    ? (document.querySelector("#monthly").checked = true)
+    : (document.querySelector("#annually").checked = true);
   displayCost();
   toggleSlider();
 });
