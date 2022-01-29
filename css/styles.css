@@ -8,7 +8,16 @@
   --dark-grayish-blue: hsl(232, 13%, 33%);
   --white: hsl(0, 0%, 100%);
   --purple: hsl(237, 63%, 64%);
-  --gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --main-gradient: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  --card-gradient: linear-gradient(
+    150deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
 }
 
 /* CSS Reset */
@@ -49,7 +58,7 @@ body {
 .main-heading {
   color: var(--grayish-blue);
   font-size: 2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.25rem;
 }
 
 .billing-period-label {
@@ -92,7 +101,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--gradient);
+  background: var(--main-gradient);
   -webkit-transition: transform 0.4s;
   transition: transform 0.4s;
   border-radius: 34px;
@@ -152,7 +161,7 @@ body {
 }
 
 .colored-card {
-  background: var(--gradient);
+  background: var(--card-gradient);
   color: var(--white);
   padding: 3.75rem 2rem 3.25rem;
   border-radius: 10px;
@@ -202,7 +211,7 @@ body {
 
 .learn-more-wrapper {
   margin-top: 2rem;
-  background: var(--gradient);
+  background: var(--main-gradient);
   padding: 0.75rem;
   border-radius: 5px;
 }
