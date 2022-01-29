@@ -7,6 +7,7 @@
   --grayish-blue: hsl(233, 13%, 49%);
   --dark-grayish-blue: hsl(232, 13%, 33%);
   --white: hsl(0, 0%, 100%);
+  --purple: hsl(237, 63%, 64%);
   --gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
@@ -215,7 +216,25 @@ body {
 }
 
 .colored-card .learn-more {
-  color: hsl(237, 63%, 64%);
+  color: var(--purple);
+}
+
+.learn-more-wrapper:hover {
+  cursor: pointer;
+  outline: 1px solid var(--purple);
+  background: var(--white);
+}
+.learn-more-wrapper:hover .learn-more {
+  color: var(--purple);
+}
+
+.colored-card .learn-more-wrapper:hover {
+  background: transparent;
+  outline: 1px solid var(--white);
+}
+
+.colored-card .learn-more-wrapper:hover .learn-more {
+  color: var(--white);
 }
 
 /* Footer Section */
@@ -225,7 +244,12 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }
 
 /* Media Queries */
