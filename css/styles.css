@@ -6,6 +6,8 @@
   --light-grayish-blue: hsl(234, 14%, 74%);
   --grayish-blue: hsl(233, 13%, 49%);
   --dark-grayish-blue: hsl(232, 13%, 33%);
+  --border-color1: hsla(232, 13%, 33%, 0.2);
+  --border-color2: hsla(0, 0%, 100%, 0.2);
   --white: hsl(0, 0%, 100%);
   --purple: hsl(237, 63%, 64%);
   --main-gradient: linear-gradient(
@@ -202,11 +204,15 @@ body {
 
 .feature {
   padding: 1rem 0;
-  border-top: 1px solid var(--light-grayish-blue);
+  border-top: 1px solid var(--border-color1);
 }
 
 .feature:last-of-type {
-  border-bottom: 1px solid var(--light-grayish-blue);
+  border-bottom: 1px solid var(--border-color1);
+}
+
+.colored-card .feature {
+  border-color: var(--border-color2);
 }
 
 .learn-more-wrapper {
