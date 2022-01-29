@@ -20,50 +20,84 @@
     <header class="header">
       <h1 class="main-heading">Our Pricing</h1>
       <div class="toggle-wrapper">
-        <input type="radio" name="pricing-period" id="annually" /><label
-          for="annually"
-          >Annually</label
-        >
-        <span class="toggle"></span>
-        <input type="radio" name="pricing-period" id="monthly" /><label
-          for="monthly"
-          >Monthly</label
-        >
+        <div>
+          <input
+            type="radio"
+            name="billing-period"
+            id="annually"
+            value="Annually"
+            class="radio-button"
+          /><label for="annually" class="billing-period-label">Annually</label>
+        </div>
+        <div>
+          <span class="toggle-switch">
+            <span class="switch">
+              <span class="toggle-slider"
+                ><span class="circle toggle-right"></span
+              ></span>
+            </span>
+          </span>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="billing-period"
+            id="monthly"
+            value="Monthly"
+            class="radio-button"
+            checked="checked"
+          /><label for="monthly" class="billing-period-label">Monthly</label>
+        </div>
       </div>
     </header>
     <main class="main">
-      <section class="card">
+      <section class="white-card basic">
         <h2 class="subheading">Basic</h2>
-        <span class="cost">&dollar;19.99 &dollar;199.99</span>
+        <div class="cost-wrapper">
+          <span class="dollar-sign">&dollar;</span
+          ><span class="cost" id="basic-cost"></span>
+        </div>
         <ul class="features">
           <li class="feature">500 GB Storage</li>
           <li class="feature">2 Users Allowed</li>
           <li class="feature">Send up to 3 GB</li>
         </ul>
-        <a href="#" class="learn-more">Learn More</a>
+        <div class="learn-more-wrapper">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
       </section>
-      <section class="card">
+      <section class="colored-card">
         <h2 class="subheading">Professional</h2>
-        <span class="cost">&dollar;24.99 &dollar;249.99</span>
+        <div class="cost-wrapper">
+          <span class="dollar-sign">&dollar;</span
+          ><span class="cost" id="professional-cost"></span>
+        </div>
         <ul class="features">
           <li class="feature">1 TB Storage</li>
           <li class="feature">5 Users Allowed</li>
           <li class="feature">Send up to 10 GB</li>
         </ul>
-        <a href="#" class="learn-more">Learn More</a>
+        <div class="learn-more-wrapper">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
       </section>
-      <section class="card">
+      <section class="white-card master">
         <h2 class="subheading">Master</h2>
-        <span class="cost">&dollar;39.99 &dollar;399.99</span>
+        <div class="cost-wrapper">
+          <span class="dollar-sign">&dollar;</span
+          ><span class="cost" id="master-cost"></span>
+        </div>
         <ul class="features">
           <li class="feature">2 TB Storage</li>
           <li class="feature">10 Users Allowed</li>
           <li class="feature">Send up to 20 GB</li>
         </ul>
-        <a href="#" class="learn-more">Learn More</a>
+        <div class="learn-more-wrapper">
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
