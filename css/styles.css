@@ -144,14 +144,14 @@ body {
 
 .white-card,
 .colored-card {
-  /* width: min(100%, 22rem); */
   flex: 1;
   color: var(--grayish-blue);
+  box-shadow: 0 0.5rem 1rem hsla(233, 13%, 49%, 0.15);
 }
 
 .white-card {
   background: var(--white);
-  padding: 2.25rem 2rem;
+  padding: 2.25rem 2rem 2rem;
 }
 
 .basic {
@@ -165,7 +165,7 @@ body {
 .colored-card {
   background: var(--card-gradient);
   color: var(--white);
-  padding: 3.75rem 2rem 3.25rem;
+  padding: 3.75rem 2rem 3.5rem;
   border-radius: 10px;
 }
 
@@ -195,7 +195,7 @@ body {
 }
 
 .white-card .cost {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .features {
@@ -216,7 +216,7 @@ body {
 }
 
 .learn-more-wrapper {
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   background: var(--main-gradient);
   padding: 0.75rem;
   border-radius: 5px;
@@ -224,6 +224,7 @@ body {
 
 .colored-card .learn-more-wrapper {
   background: var(--white);
+  margin-top: 2.25rem;
 }
 
 .learn-more {
