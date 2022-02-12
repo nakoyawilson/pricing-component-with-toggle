@@ -36,7 +36,7 @@
 body {
   background-color: var(--very-light-grayish-blue);
   background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: right top, left bottom;
   color: var(--dark-grayish-blue);
   font-family: var(--font);
